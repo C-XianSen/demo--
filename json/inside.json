@@ -1,0 +1,50 @@
+[
+    {
+        "path": "../img/goodslist-item1.png",
+        "head": "雪域芝士蛋糕",
+        "price": "￥198",
+        "text": "严选食材，做工精致"
+    },
+    {
+        "path": "../img/goodslist-item2.png",
+        "head": "绿豆糕",
+        "price": "￥12.9",
+        "text": "细腻松软，入口绵柔"
+    },
+    {
+        "path": "../img/goodslist-item3.png",
+        "head": "天然酵母面包",
+        "price": "￥12.8",
+        "text": "浓郁奶香，清甜松软"
+    },
+    {
+        "path": "../img/goodslist-item4.png",
+        "head": "黄金脆千层 140克",
+        "price": "￥18",
+        "text": "茶味酥塔，好吃不腻"
+    },
+    {
+        "path": "../img/goodslist-item1.png",
+        "head": "雪域芝士蛋糕",
+        "price": "￥198",
+        "text": "严选食材，做工精致"
+    },
+    {
+        "path": "../img/goodslist-item2.png",
+        "head": "绿豆糕",
+        "price": "￥12.9",
+        "text": "细腻松软，入口绵柔"
+    },
+    {
+        "path": "../img/goodslist-item3.png",
+        "head": "天然酵母面包",
+        "price": "￥12.8",
+        "text": "浓郁奶香，清甜松软"
+    },
+    {
+        "path": "../img/goodslist-item4.png",
+        "head": "黄金脆千层 140克",
+        "price": "￥18",
+        "text": "茶味酥塔，好吃不腻"
+    }
+]

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易严选</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.0.min.js"></script>    
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <!-- header -->
+
+    <div class="header">
+        <div class="head-top">
+            <div class="wrap">
+                <div class="head-top-fl">
+                    <div class="head-top-fl-text1"><a href="#">好的生活，没那么贵</a></div>
+                    <div class="head-top-fl-text2">
+                        <div class="head-top-fl-text2-view">
+                            <ul id="head-top-fl-txt2">
+                                <li><a href="#">防诈骗公告</a></li>
+                                <li><a href="#">夏凉真丝3件5折</a></li>
+                                <li><a href="#">消暑食材调味满减折</a></li>
+                                <li><a href="#">【福利】下载严选APP，抢1元包邮团，领...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-top-fr">
+                    <?php
+                        echo "欢迎" .$_COOKIE[$name];
+                    ?>
+                    <div class="head-top-fr-txt">
+                        <div class="head-top-fr-txt-login"><a href="./html/login.html">登录</a></div>
+                        <div class="head-top-fr-txt-logon"><a href="#">注册</a></div>
+                    </div>
+                    <ul class="head-top-fr-nav">
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">会员</a></li>
+                        <li><a href="#">甄选家</a></li>
+                        <li><a href="#">企业采购</a></li>
+                        <li class="head-top-fr-navli1">
+                            <a href="#">客户服务<i class="iconfont icon-jiantou rotate"></i></a>
+                            <div class="head-top-fr-nav-list">
+                                <p>在线客服</p>
+                                <p>帮助中心</p>
+                                <p>商务合作</p>
+                                <p>开发平台</p>
+                                <i class="iconfont icon-sanjiaoxing-up"></i>
+                            </div>
+                        </li>
+                        <li class="head-top-fr-navli2">
+                            <a href="#"><i class="iconfont icon-shouji-copy"></i>APP</a>
+                            <div class="head-top-fr-nav-code">
+                                <img src="img/code.jpg" alt="">
+                                <i class="iconfont icon-sanjiaoxing-up"></i>
+                                <p>下载领1000元新人礼包</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="head-bottom" class="head-bottom">
+            <div class="wrap">
+                <div class="head-bottom-bg">
+                    <img src="img/bg.gif" alt="">
+                </div>
+                <div class="head-bottom-ss">
+                    <div class="head-bottom-ss-shopcart">
+                        <i class="iconfont icon-03" onclick="window.location.href='./html/trolley.html'"></i>
+                    </div>
+                    <div class="head-bottom-ss-member">
+                        <i class="iconfont icon-yonghu"></i>
+                    </div>
+                    <div class="head-bottom-ss-search">
+                        <input type="text" placeholder="&nbsp;&nbsp;&nbsp;3D透气护脊床垫上新">
+                        <i class="iconfont icon-fangdajing"></i>
+                    </div>
+                </div>
+                <div class="head-bottom-nav">
+                    <ul id="head-bottom-list">
+                        <li class="head-bottom-thisli">
+                            <a href="#" class="head-bottom-litit">首页</a>
+                            <!-- <div class="head-bottom-lidd"></div> -->
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">居家</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/床品件套.png" alt="">
+                                                <p>床品件套</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/被枕.png" alt="">
+                                                <p>被枕</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/家具.png" alt="">
+                                                <p>家具</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/收纳.png" alt="">
+                                                <p>收纳</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/布艺软装.png" alt="">
+                                                <p>布艺软装</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/家饰.png" alt="">
+                                                <p>家饰</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/宠物.png" alt="">
+                                                <p>宠物</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">配件</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/行李箱.png" alt="">
+                                                <p>行李箱</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/男士包袋.png" alt="">
+                                                <p>男士包袋</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/女士包袋.png" alt="">
+                                                <p>女士包袋</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/钱包及小皮件.png" alt="">
+                                                <p>钱包及小皮件</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/女鞋.png" alt="">
+                                                <p>女鞋</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/男鞋.png" alt="">
+                                                <p>男鞋</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/拖鞋.png" alt="">
+                                                <p>拖鞋</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/鞋配.png" alt="">
+                                                <p>鞋配</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/袜子.png" alt="">
+                                                <p>袜子</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/丝袜.png" alt="">
+                                                <p>丝袜</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/配饰.png" alt="">
+                                                <p>配饰</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/眼镜.png" alt="">
+                                                <p>眼镜</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/围巾件套.png" alt="">
+                                                <p>围巾件套</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/旅行用品.png" alt="">
+                                                <p>旅行用品</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">服装</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/T恤.png" alt="">
+                                                <p>T恤</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/衬衫.png" alt="">
+                                                <p>衬衫</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/牛仔.png" alt="">
+                                                <p>牛仔</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/运动.png" alt="">
+                                                <p>运动</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/裤装.png" alt="">
+                                                <p>裤装</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/内衣.png" alt="">
+                                                <p>内衣</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/内裤.png" alt="">
+                                                <p>内裤</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/家居服.png" alt="">
+                                                <p>家居服</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/裙装.png" alt="">
+                                                <p>裙装</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/卫衣.png" alt="">
+                                                <p>卫衣</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/外衣.png" alt="">
+                                                <p>外衣</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/针织毛衫.png" alt="">
+                                                <p>针织毛衫</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">电器</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">洗护</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="./html/inside.html" class="head-bottom-litit">饮食</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">餐厨</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">婴童</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">文体</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-li">
+                            <a href="#" class="head-bottom-litit">特色区</a>
+                            <div class="head-bottom-lidd">
+                                <div class="head-bottom-ddlist">
+                                    <ul class="head-bottom-ddnav">
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/生活电器.png" alt="">
+                                                <p>生活电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/厨房电器.png" alt="">
+                                                <p>厨房电器</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/个护健康.png" alt="">
+                                                <p>个护健康</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/数码.png" alt="">
+                                                <p>数码</p>
+                                            </a>
+                                        </li>
+                                        <li class="head-bottom-ddnav-li">
+                                            <a href="#">
+                                                <img src="img/影音娱乐.png" alt="">
+                                                <p>影音娱乐</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="head-bottom-line"></li>
+                        <li class="head-bottom-txt"><a href="#" class="head-bottom-litit">为你严选</a></li>
+                        <li class="head-bottom-txt"><a href="#" class="head-bottom-litit">众筹</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="head-bottom-logo">
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- middle -->
+
+    <div class="middle">
+        <div class="middle-banner">
+            <div class="middle-banner-btn">
+                <div class="middle-banner-btnL"><i class="iconfont icon-xiangzuoanniuhover"></i></div>
+                <div class="middle-banner-btnR"><i class="iconfont icon-xiangyouanniuhover"></i></div>
+            </div>
+            <ul id="middle-banner-imglist">
+                <li class="middle-banner-img"><img src="img/banner (1).jpg" alt=""></li>
+                <li class="middle-banner-img"><img src="img/banner (2).jpg" alt=""></li>
+                <li class="middle-banner-img"><img src="img/banner (3).jpg" alt=""></li>
+                <li class="middle-banner-img"><img src="img/banner (4).jpg" alt=""></li>
+                <li class="middle-banner-img"><img src="img/banner (5).jpg" alt=""></li>
+                <li class="middle-banner-img"><img src="img/banner (6).jpg" alt=""></li>
+            </ul>
+            <ul id="middle-banner-dotlist">
+            </ul>
+        </div>
+        <div class="middle-content wrap">
+            <div class="middle-content-section1">
+                <div class="middle-content-secHead">
+                    <div class="middle-content-secHead-fl">
+                        <h3>品牌制造商</h3>
+                        <span>工厂直达消费者，剔除品牌溢价</span>
+                    </div>
+                    <div class="middle-content-secHead-fr">
+                        <p>更多制造商></p>
+                    </div>
+                </div>
+                <div class="middle-content-secBox">
+                    <a href="#" class="middle-content-secBoxa1">
+                        <div class="middle-content-secBox-text1">
+                            <span class="title">CK制造商</span>
+                            <span class="tips">上新</span>
+                        </div>
+                        <div class="middle-content-secBox-text2">25元起</div>
+                        <div class="middle-content-secBox-img"><img src="img/CK制造商.jpg" alt="CK制造商"></div>
+                    </a>
+                </div>
+                <div class="middle-content-secBox secBox-margin-left">
+                    <a href="#" class="middle-content-secBoxa1">
+                        <div class="middle-content-secBox-text1">
+                            <span class="title">Kenneth Cole制造商</span>
+                        </div>
+                        <div class="middle-content-secBox-text2">215元起</div>
+                        <div class="middle-content-secBox-img"><img src="img/Kenneth Cole制造商.png" alt="Kenneth Cole制造商"></div>
+                    </a>
+                </div>
+                <div class="middle-content-secBox secBox-margin-left">
+                    <div class="middle-content-secSmallbox">
+                        <a href="#" class="middle-content-secBoxa2">
+                            <div class="middle-content-secSmallbox-text1">
+                                <span class="title">Ralph Lauren制造商</span>
+                                <span class="tips">上新</span>
+                            </div>
+                            <div class="middle-content-secSmallbox-text2">19元起</div>
+                            <div class="middle-content-secSmallbox-img"><img src="img/Ralph Lauren制造商.jpg" alt="Ralph Lauren制造商"></div>
+                        </a>
+                    </div>
+                    <div class="middle-content-secSmallbox secSmallbox-margin">
+                        <a href="#" class="middle-content-secBoxa2">
+                            <div class="middle-content-secSmallbox-text1">
+                                <span class="title">海外制造商</span>
+                                <span class="tips">上新</span>
+                            </div>
+                            <div class="middle-content-secSmallbox-text2">9.9元起</div>
+                            <div class="middle-content-secSmallbox-img"><img src="img/海外制造商.jpg" alt="海外制造商"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-content-section2">
+                <div class="middle-content-secHead">
+                    <div class="middle-content-secHead-fl">
+                        <h3>新品首发</h3>
+                        <span>为你寻觅世间好物</span>
+                    </div>
+                    <div class="middle-content-secHead-fr">
+                        <p>更多新品></p>
+                    </div>
+                </div>
+                <div class="middle-content-slickWidth">
+                    <ul>
+                        <div class="mid-cont-slickList">
+                            <button class="slickList-btn slickprev" onclick="prev()"></button>
+                            <div class="slick-list">
+                                <div class="slick-track">
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item1.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item1-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum">泰国制造</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span>限时购</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>2个装 泰国制造 天然乳胶枕护颈优眠</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>335.8</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item2.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item2-2.png" alt="">
+                                                </div>
+                                                <div class="colorNum" style="display: none">泰国制造</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags" >
+                                                <span style="display: none">限时购</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>网易有道词典笔</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>499</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item3.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item3-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum" style="display: none;">泰国制造</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span style="display: none;">限时购</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>女士洗面奶</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>59</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item4.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item4-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum" style="display: none;">泰国制造</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span>满赠</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>网易智造X3 Plus蓝牙HiFi耳机</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>199</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item5.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item5-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum">3色可选</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span style="display: none;">限时购</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>女式中长款条纹短袖T恤裙</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>99</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item6.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item6-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum" style="display: none;">泰国制造</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span style="display: none;">限时购</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>迷你除湿器</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>69</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item7.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item7-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum">3色可选</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span>新品特惠</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>蝴蝶结方头女平底鞋</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>319</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slick-item">
+                                        <div class="slick-item-hd">
+                                            <a href="#">
+                                                <div class="slick-item-hd-img">
+                                                    <img src="./img/index-slick-item8.png" alt="">
+                                                </div>
+                                                <div class="slick-item-hd-img2">
+                                                    <img src="./img/index-slick-item8-2.jpg" alt="">
+                                                </div>
+                                                <div class="colorNum">泰国制造</div>
+                                            </a>
+                                        </div>
+                                        <div class="slick-item-bd">
+                                            <div class="prdtTags">
+                                                <span>限时购</span>
+                                            </div>
+                                            <h4 class="prdtName">
+                                                <a href="#">
+                                                    <span>&nbsp;</span>
+                                                    <span>菊花雪梨茶 12瓶</span>
+                                                </a>
+                                            </h4>
+                                            <p class="prdtPrice">
+                                                <span class="retailPrice">
+                                                    <span>￥</span>
+                                                    <span>82</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="slickList-btn slicknext" onclick="next()"></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footer-clear">
+            <div class="footer-up">
+                <div class="wrap">
+                    <div class="footer-up-item">
+                        <h4>客户服务</h4>
+                        <a href="#" class="footer-up-item-box">
+                            <i class="footer-up-item-bg footer-up-item-kufu"></i>
+                            <span class="footer-up-item-text">在线客服</span>
+                        </a>
+                        <a href="#" class="footer-up-item-box">
+                            <i class="footer-up-item-bg footer-up-item-fankui"></i>
+                            <span class="footer-up-item-text">用户反馈</span>
+                        </a>
+                    </div>
+                    <div class="footer-up-item">
+                        <div class="footer-up-item-top">
+                            <h4>何为严选</h4>
+                            <p>网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                        </div>
+                        <div class="footer-up-item-down">
+                            <span>关注我们 :</span>
+                            <div class="footer-up-item-icon">
+                                <i class="footer-up-item-icon-qq"></i>
+                            </div>
+                            <div class="footer-up-item-icon">
+                                <i class="footer-up-item-icon-wechat"></i>
+                            </div>
+                            <div class="footer-up-item-icon">
+                                <i class="footer-up-item-icon-weibo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-up-item">
+                        <h4>扫码下载严选APP</h4>
+                        <div class="footer-up-item-code"><img src="./img/code.png" alt=""></div>
+                        <div class="footer-up-item-codetxt">下载领1000元新人礼包</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down">
+                <div class="wrap">
+                    <ul class="footer-down-item1">
+                        <li class="footer-dwon-item1-li">
+                            <div class="footer-dwon-item1-box">
+                                <i class="footer-dwon-item1-bg logo1"></i>
+                                <p class="footer-dwon-item1-txt">30天无忧退换货</p>
+                            </div>
+                        </li>
+                        <li class="footer-dwon-item1-li">
+                            <div class="footer-dwon-item1-box">
+                                <i class="footer-dwon-item1-bg logo2"></i>
+                                <p class="footer-dwon-item1-txt">满88元免邮费</p>
+                            </div>
+                        </li>
+                        <li class="footer-dwon-item1-li">
+                            <div class="footer-dwon-item1-box">
+                                <i class="footer-dwon-item1-bg logo3"></i>
+                                <p class="footer-dwon-item1-txt">网易品质保证</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="footer-down-line"></div>
+                    <div class="footer-down-item2">
+                        <div class="footer-down-item2-list">
+                            <a href="#">关于我们</a>
+                            <i>|</i>
+                            <a href="#">帮助中心</a>
+                            <i>|</i>
+                            <a href="#">售后服务</a>
+                            <i>|</i>
+                            <a href="#">配送与验收</a>
+                            <i>|</i>
+                            <a href="#">商务合作</a>
+                            <i>|</i>
+                            <a href="#">企业采购</a>
+                            <i>|</i>
+                            <a href="#">开放平台</a>
+                            <i>|</i>
+                            <a href="#">搜索推荐</a>
+                            <i>|</i>
+                            <a href="#">友情链接</a>
+                        </div>
+                        <p class="footer-down-item2-txt">
+                                <span>网易公司版权所有 © 1997-2018</span>
+                                <span>&nbsp;</span>
+                                <span style="cursor:pointer">食品经营许可证：JY13301080111719 </span>
+                                <span style="cursor:pointer">出版物经营许可证：新出发滨字第0132号</span>
+                        </p>
+                        <a href="#" class="footer-down-item2-gif">
+                            <img src="./img/wangluogongshang.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
